@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PET-SHOP</title>
+    <!-- Google fonts connect link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font awesome connect link -->
+    <script src="https://kit.fontawesome.com/dc56b60fc7.js" crossorigin="anonymous"></script>
+
+    <!-- DaisyUI connect link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS connet link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- css style -->
+     <style>
+        .fonts-primary{
+             font-family: "Sora", serif;
+             font-optical-sizing: auto;
+             font-weight:400;
+             font-style: normal;
+            }
+        .fonts-secondary{
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+
+
+     </style>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+
+          --color-text-color:#111111;
+          --color-card-color:#F9DF8A;
+          --color-btn-color:#FFDC26;
+          
+        }
+      </style>
 </head>
-<body>
+<body class="fonts-primary">
     <!-- Header section is start -->
     <header>
-
+        <h1 class="fonts-secondary bg-mint-500 text-color">Md Imran hasan</h1><br> <br><br>
     </header>
 
     <!-- Main section is start -->
      <main>
-
+        <p class="primary text-text-color bg-btn-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptatem earum quisquam at optio magni, tenetur non dolores a doloremque.</p>
+        <p class="text-text-color bg-card-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sed esse. Aliquid debitis provident nostrum alias, ipsum atque quas sapiente.</p>
+        <br><br>
+        <h1 class="bg-btn-color"> ekhane hoi </h1>
+        <button class="text-center bg-btn-color">submit</button>
+        <button class="bg-btn-color bg-[#FFDC26]">click</button>
      </main>
 
      <!-- Footer section is start -->
