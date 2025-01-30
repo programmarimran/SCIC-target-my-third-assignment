@@ -39,7 +39,11 @@
               
               display: block;
             }
-            
+            @media screen and (max-width:768px) {
+              nav{
+                border-bottom: 2px solid #111111;
+              }
+            }
 
      </style>
     <style type="text/tailwindcss">
@@ -58,47 +62,64 @@
     <header>
 
       <!-- navber start -->
-        <nav class="bg-[#FFF9F4] max-w-screen-xl mx-auto">
-          <section class="flex justify-between items-center w-[95%] mx-auto">
-            <div class="flex gap-3 items-center">
-              <div>
-                <img src="./c1-assets/logo-header.png" alt="">
+        <nav class="bg-[#FFF9F4] max-w-screen-xl mx-auto mb-[94px]">
+          <div class="">
+            <section class="flex justify-between items-center w-[95%] mx-auto">
+              <div class="flex gap-3 items-center">
+                <div>
+                  <img src="./c1-assets/logo-header.png" alt="">
+                </div>
+                <h1 class="text-text-color font-normal text-xl hidden md:block">Browse<span class="text-btn-color">4</span>Pets</h1>
               </div>
-              <h1 class="text-text-color font-normal text-xl hidden md:block">Browse<span class="text-btn-color">4</span>Pets</h1>
-            </div>
-
-            <!-- hamberger -->
-             <div class="kisoekta"><span class="md:hidden  text-4xl">☰</span>
-              <ul class="flex items-center lg:gap-6 md:gap-2 hidden">
-                <li class="currentColor"><a class="font-normal text-text-color text-xl" href="Find a pet">Find a pet</a></li>
-                <li><a class="font-normal text-text-color text-xl" href="Breeds">Breeds</a></li>
-                <li><a class="font-normal text-text-color text-xl" href="Contact us">Contact us</a></li>
-              </ul>
-             </div>
-            <!-- nav link -->
+  
+              <!-- hamberger -->
+               <div class="kisoekta"><span class="md:hidden  text-4xl">☰</span>
+                <ul class="flex items-center lg:gap-6 md:gap-2 hidden">
+                  <li class="currentColor"><a class="font-normal text-text-color text-xl" href="Find a pet">Find a pet</a></li>
+                  <li><a class="font-normal text-text-color text-xl" href="Breeds">Breeds</a></li>
+                  <li><a class="font-normal text-text-color text-xl" href="Contact us">Contact us</a></li>
+                </ul>
+               </div>
+              <!-- nav link -->
+                <div class="hidden md:block">
+                    <ul class="flex items-center lg:gap-6 md:gap-2 ">
+                      <li class="currentColor"><a class="font-normal text-text-color text-xl" href="Find a pet">Find a pet</a></li>
+                      <li><a class="font-normal text-text-color text-xl" href="Breeds">Breeds</a></li>
+                      <li><a class="font-normal text-text-color text-xl" href="Contact us">Contact us</a></li>
+                    </ul>
+                </div>
+              <!-- buttotn -->
               <div class="hidden md:block">
-                  <ul class="flex items-center lg:gap-6 md:gap-2 ">
-                    <li class="currentColor"><a class="font-normal text-text-color text-xl" href="Find a pet">Find a pet</a></li>
-                    <li><a class="font-normal text-text-color text-xl" href="Breeds">Breeds</a></li>
-                    <li><a class="font-normal text-text-color text-xl" href="Contact us">Contact us</a></li>
-                  </ul>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
+                      <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
+                  </button>
+                <button class="btn border border-btn-color text-text-color font-normal">Login</button>
+                <button class="btn  bg-btn-color hover:bg-btn-color border-none shadow-none text-text-color font-normal">Register</button>
               </div>
-            <!-- buttotn -->
-            <div class="hidden md:block">
-                <button class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
-                    <span class="badge badge-xs badge-primary indicator-item"></span>
-                  </div>
-                </button>
-                <button class="btn btn-ghost btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
-                </button>
-              <button class="btn border border-btn-color text-text-color font-normal">Login</button>
-              <button class="btn  bg-btn-color hover:bg-btn-color border-none shadow-none text-text-color font-normal">Register</button>
-            </div>
-          </section>
+            </section>
+          </div>
         </nav>
+
+        <!-- banner start -->
+         <section class="max-w-screen-xl mx-auto">
+          <div class=" w-[95%] mx-auto relative">
+            <!-- text part -->
+            <div class="absolute inset-0 z-10 space-y-7">
+              <h3 class="font-normal text-[56px] text-text-color fonts-secondary md:leading-none lg:leading-normal">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h3>
+              <p>Discover a world of treats, toys, and essentials handpicked for your <br> furry friends. Shop now and make tails wag with joy!</p>
+              <button class="btn  bg-btn-color hover:bg-btn-color border-none shadow-none text-text-color font-normal">Find a pet</button>
+            </div>
+            <div class="">
+              <img src="./c1-assets/cat-big.png" alt="">
+            </div>
+          </div>
+         </section>
     </header>
 
     <!-- Main section is start -->
