@@ -127,7 +127,7 @@
 <main class="max-w-screen-xl mx-auto">
 
   <!-- Browse By Categories -->
-  <section class="mb-[176px] w-[90%] mx-auto">
+  <section class="mb-[120px] w-[90%] mx-auto">
     <h1 class="font-normal text-text-color text-2xl lg:text-4xl fonts-secondary mb-12">Browse By Categories</h1>
     <div class="flex flex-wrap gap-4 justify-stretch">
       <div class="bg-card-color rounded-xl w-[150px] h-[220px]  flex justify-center items-center">
@@ -207,19 +207,19 @@
   </section>
 
   <!-- Trending Pet Products -->
-   <section class="bg-[#FFF9F4] h-[775px]">
+   <section class="bg-[#FFF9F4] ">
 
-      <div class="mb-[176px] w-[99%] mx-auto">
+      <div class="mb-[120px] w-[99%] mx-auto py-[140px]">
         <!-- title -->
         <h1 class="font-normal text-text-color text-2xl lg:text-4xl fonts-secondary mb-[48px]">Trending Pet Products</h1>
         <!-- card container -->
-         <div class="lg:flex justify-between">
+         <div class="lg:flex justify-around gap-6">
 
            <!-- big card -->
            <div class="mb-6">
-            <div class="card  bg-card-color lg:w-100 lg:h-100 w-80 h-80 mx-auto">
+            <div class="card  bg-card-color lg:w-96 lg:h-96 w-80 h-80 mx-auto md:mx-0">
               <figure class="relative ">
-                <div class="h-80 lg:h-100 ml-1 lg:ml-8 mt-16 lg:mt-30 space-y-5">
+                <div class="h-80 lg:h-100 ml-1 lg:ml-1 mt-16 lg:mt-30 space-y-5">
                   <h2 class="card-title font-normal text-text-color text-xl lg:text-4xl fonts-secondary">T- Shirt For Dogs</h2>
                   <p class="font-normal text-slate-700 text-xs lg:text-lg ">Discover a world of treats, toys, and  <br>essentials handpicked for </p>
                   <button class="btn btn-primary bg-white text-text-color border-none shadow-none ">Shop now</button>
@@ -235,7 +235,7 @@
            </div>
            <!-- small cards -->
             <!-- small container -->
-            <div class="grid md:grid-cols-3  grid-cols-2 gap-3 lg:gap-6">
+            <div class="grid md:grid-cols-3  grid-cols-2 gap-3 lg:gap-3">
                
               <!-- cards -->
               <div class="bg-white flex border border-[#1111111A] rounded-xl gap-4 justify-start items-center  lg:py-2 pr-3 lg:pr-11 pl-3">
@@ -360,6 +360,65 @@
         </div>
       </div>
    </section>
+
+
+   <!-- Everyday low Price -->
+    <section class="mb-[120px] w-[90%] mx-auto">
+      <!-- title -->
+      <h1 class="font-normal text-text-color text-2xl lg:text-4xl fonts-secondary mb-[48px]">Everyday low Price</h1>
+       <div class="lg:flex lg:gap-6">
+         <!-- big card -->
+         <div class="hidden lg:block lg:w-[65%] bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD] lg:flex rounded-lg">
+            <div class="flex justify-center items-center flex-1">
+              <div class="space-y-5">
+                <p class="font-normal text-xl text-[#000000] hidden lg:block">Under Price</p>
+                <h2 class="font-normal text-3xl text-[#000000] fonts-secondary">Pet Grooming Mitt</h2>
+                <h3 class="font-normal text-2xl text-[#FFFFFF] fonts-secondary hidden lg:block">(Easy Hair Removal)</h3>
+                <h1 class="font-normal text-5xl text-[#000000] fonts-secondary">$7.99</h1>
+              </div>
+            </div>
+            <div class=" flex-1 lg:h-[200px]">
+              <img class="lg:w-3/4"
+                src="./c1-assets/cute-dog-mid.png"
+                alt="Movie" />
+            </div>
+          </div>
+          <!-- mediam device  -->
+          <div class="lg:hidden mb-6 card  bg-linear-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-96 lg:h-96 w-80 h-80 mx-auto md:mx-0">
+            <figure class="relative ">
+              <div class="h-80 lg:h-100 ml-1 lg:ml-1 mt-16 lg:mt-30 space-y-5">
+                <h2 class="card-title font-normal text-text-color text-xl lg:text-4xl fonts-secondary">Pet Grooming Mitt</h2>
+                <h2 class="card-title font-normal text-white text-4xl lg:text-4xl fonts-secondary">$7.99</h2>
+                
+              </div>
+            
+              <div class="absolute top-20 left-49">
+                <img
+                src="./c1-assets/cute-dog-mid.png"
+                alt="Movie" />
+              </div>
+            </figure>
+          </div>
+         <!-- small card -->
+          <div class="lg:w-[30%]">
+            <div class="card  bg-linear-to-r from-[#FFF9F4] to-[#F9DF8A] lg:w-96 lg:h-96 w-80 h-80 mx-auto md:mx-0">
+              <figure class="relative ">
+                <div class="h-80 lg:h-100 ml-1 lg:ml-1 mt-16 lg:mt-30 space-y-5">
+                  <h2 class="card-title font-normal text-text-color text-xl lg:text-4xl fonts-secondary">T-Shirt for Dogs</h2>
+                  <h2 class="card-title font-normal text-[#FFDC26] text-4xl lg:text-4xl fonts-secondary">$7.99</h2>
+                  
+                </div>
+              
+                <div class="absolute top-20 left-49">
+                  <img
+                  src="./c1-assets/cute-pet-mid.png"
+                  alt="Movie" />
+                </div>
+              </figure>
+            </div>
+          </div>
+       </div>
+    </section>
 </main>
 
      <!-- Footer section is start -->
